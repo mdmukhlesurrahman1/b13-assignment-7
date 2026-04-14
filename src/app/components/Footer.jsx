@@ -7,7 +7,7 @@ import {
 const Footer = () => {
   return (
     <div className="bg-[#244D3F] text-white pt-10 md:pt-20 pb-7.5">
-      <div className="container mx-auto px-4 md:px-20">
+      <div className="mx-auto w-11/12 md:w-9/12 max-w-277.5">
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">KeenKeeper</h1>
           <p className="mb-6">
