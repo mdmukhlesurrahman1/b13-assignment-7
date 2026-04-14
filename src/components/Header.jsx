@@ -1,25 +1,40 @@
+"use client";
+
 import Image from "next/image";
-import logo from "../../assets/logo.png";
+import logo from "../assets/logo.png";
 import { FaChartLine, FaHome, FaTimes } from "react-icons/fa";
 import { RiTimeLine } from "react-icons/ri";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathName = usePathname();
+
   const links = (
     <>
       <li className="font-bold px-4 py-2 rounded-sm text-[#64748B]">
-        <div className="flex items-center">
+        <Link
+          href="/"
+          className={pathName === "/" ? "bg-[#244D3F] text-white" : ""}
+        >
           <FaHome /> Home
-        </div>
+        </Link>
       </li>
       <li className="font-bold px-4 py-2 rounded-sm text-[#64748B]">
-        <div className="flex items-center">
+        <Link
+          href="/timeline"
+          className={pathName === "/timeline" ? "bg-[#244D3F] text-white" : ""}
+        >
           <RiTimeLine /> Timeline
-        </div>
+        </Link>
       </li>
       <li className="font-bold px-4 py-2 rounded-sm text-[#64748B]">
-        <div className="flex items-center">
+        <Link
+          href="/states"
+          className={pathName === "/states" ? "bg-[#244D3F] text-white" : ""}
+        >
           <FaChartLine /> States
-        </div>
+        </Link>
       </li>
     </>
   );
