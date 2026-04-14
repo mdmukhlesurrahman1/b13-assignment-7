@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import logo from "../assets/logo.png";
-import { FaChartLine, FaHome, FaTimes } from "react-icons/fa";
+import { FaChartLine, FaHome} from "react-icons/fa";
 import { RiTimeLine } from "react-icons/ri";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -33,17 +33,17 @@ const Header = () => {
           href="/states"
           className={pathName === "/states" ? "bg-[#244D3F] text-white" : ""}
         >
-          <FaChartLine /> States
+          <FaChartLine /> Stats
         </Link>
       </li>
     </>
   );
   return (
-    <div className="bg-white text-black shadow-sm">
+    <div className="bg-white text-black shadow-sm mb-10 lg:mb-20">
       <div className="navbar md:w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -69,7 +69,7 @@ const Header = () => {
           </div>
           <Image src={logo} alt="logo" width={141} height={31} />
         </div>
-        <div className="navbar-end hidden md:flex">
+        <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
       </div>

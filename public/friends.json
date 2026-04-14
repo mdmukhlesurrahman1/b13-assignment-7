@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "sarah.j@outlook.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["college", "hiking"],
+    "bio": "Met during freshman orientation. Always down for a weekend trail run or a craft brewery visit.",
+    "goal": 14,
+    "next_due_date": "2024-03-10"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Thompson",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "m.thompson@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["tech", "gaming"],
+    "bio": "Former coworker at the startup. We chat about React, indie games, and mechanical keyboards.",
+    "goal": 30,
+    "next_due_date": "2024-04-10"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rodriguez",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "elena.rod@icloud.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["neighborhood", "potluck"],
+    "bio": "Lives two streets over. We share a passion for sourdough baking and urban gardening.",
+    "goal": 14,
+    "next_due_date": "2024-03-28"
+  },
+  {
+    "id": 4,
+    "name": "David Chen",
+    "picture": "https://randomuser.me/api/portraits/men/85.jpg",
+    "email": "dchen_designs@gmail.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["childhood", "close friend"],
+    "bio": "Best friends since 3rd grade. Even though he moved to Seattle, we try to catch up monthly.",
+    "goal": 30,
+    "next_due_date": "2024-02-15"
+  },
+  {
+    "id": 5,
+    "name": "Maya Patel",
+    "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+    "email": "maya.patel.yoga@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["fitness", "meditation"],
+    "bio": "Met at the local yoga studio. She's a great source of calm and perspective.",
+    "goal": 7,
+    "next_due_date": "2024-03-21"
+  },
+  {
+    "id": 6,
+    "name": "Liam O'Connor",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "liam.oconnor@yahoo.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["music", "concerts"],
+    "bio": "Concert buddy. We've seen at least 20 bands together in the last three years.",
+    "goal": 14,
+    "next_due_date": "2024-03-30"
+  },
+  {
+    "id": 7,
+    "name": "Chloe Whitmore",
+    "picture": "https://randomuser.me/api/portraits/women/17.jpg",
+    "email": "chloe.creative@protonmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["art", "travel"],
+    "bio": "Met in a photography workshop in Florence. She has a brilliant eye for street photography.",
+    "goal": 30,
+    "next_due_date": "2024-03-01"
+  },
+  {
+    "id": 8,
+    "name": "James Wilson",
+    "picture": "https://randomuser.me/api/portraits/men/54.jpg",
+    "email": "j.wilson_sports@me.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["basketball", "gym"],
+    "bio": "My main lifting partner. Keeps me accountable and pushes me to hit new PRs.",
+    "goal": 7,
+    "next_due_date": "2024-03-20"
+  },
+  {
+    "id": 9,
+    "name": "Sophia Kim",
+    "picture": "https://randomuser.me/api/portraits/women/29.jpg",
+    "email": "sophia.k.edu@gmail.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["book club", "university"],
+    "bio": "Brilliant reader and writer. We swapped books throughout our entire Master's program.",
+    "goal": 21,
+    "next_due_date": "2024-04-05"
+  },
+  {
+    "id": 10,
+    "name": "Andre Baptiste",
+    "picture": "https://randomuser.me/api/portraits/men/46.jpg",
+    "email": "andre.bap@live.com",
+    "days_since_contact": 19,
+    "status": "almost due",
+    "tags": ["cooking", "wine"],
+    "bio": "The best amateur chef I know. He hosts the most incredible dinner parties.",
+    "goal": 21,
+    "next_due_date": "2024-03-27"
+  }
+]
