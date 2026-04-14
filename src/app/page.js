@@ -1,3 +1,4 @@
+import Friends from "@/components/Friends";
 import { FaPlus } from "react-icons/fa6";
 
 
@@ -33,6 +34,10 @@ export default function Home() {
             <p className="text-[#64748B]">Interactions This Month</p>
           </div>
         </div>
+
+        <hr className="opacity-20" />
+
+        <Friends />
       </main>
     </div>
   );
