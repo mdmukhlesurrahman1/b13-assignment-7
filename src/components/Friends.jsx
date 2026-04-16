@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Friends = async () => {
   const res = await fetch("https://keen-keeper-one.vercel.app/friends.json");
@@ -11,11 +12,15 @@ const Friends = async () => {
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {friends.map((friend) => (
-          <div key={friend.id} className="card bg-white shadow-sm">
+          <Link
+            href={`/friend/${friend.id}`}
+            key={friend.id}
+            className="card bg-white shadow-sm hover:-translate-y-1"
+          >
             <figure className="pt-6">
               <Image
                 src={friend.picture}
-                alt="friend.name"
+                alt={friend.name}
                 width={80}
                 height={80}
                 className="rounded-full"
@@ -28,12 +33,21 @@ const Friends = async () => {
               </p>
               <div className="flex flex-wrap gap-1 justify-center items-center">
                 {friend.tags.map((t, i) => (
-                  <div key={i} className="badge text-[#244D3F] bg-[#CBFADB] font-medium rounded-full">{t}</div>
+                  <div
+                    key={i}
+                    className="badge text-[#244D3F] bg-[#CBFADB] font-medium rounded-full"
+                  >
+                    {t}
+                  </div>
                 ))}
               </div>
-              <div className={`badge text-white font-medium rounded-full ${friend.status === 'overdue' && 'bg-[#EF4444]'} ${friend.status === 'on-track' && 'bg-[#244D3F]'} ${friend.status === 'almost due' && 'bg-[#EFAD44]'}`}>{friend.status}</div>
+              <div
+                className={`badge text-white font-medium rounded-full ${friend.status === "overdue" && "bg-[#EF4444]"} ${friend.status === "on-track" && "bg-[#244D3F]"} ${friend.status === "almost due" && "bg-[#EFAD44]"}`}
+              >
+                {friend.status}
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
