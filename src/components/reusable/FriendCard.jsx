@@ -28,7 +28,7 @@ const FriendCard = ({friend}) => {
         ))}
       </div>
       <p className="text-[#64748B] font-medium mb-3"><em>{`"${friend.bio}"`}</em></p>
-      <p className="text-[#64748B] text-sm">{`Preferred: ${friend.email}`}</p>
+      <p className="text-[#64748B]">{`Preferred: ${friend.email}`}</p>
     </div>
   );
 };

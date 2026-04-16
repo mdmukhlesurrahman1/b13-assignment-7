@@ -2,6 +2,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Providers from "./lib/providers";
 
 
 export const metadata = {
@@ -21,9 +22,12 @@ export default function RootLayout({ children }) {
       className={geist.className}
     >
       <body className="bg-[#F8FAFC] max-w-400 mx-auto">
-        <Header></Header>
+        <Providers>
+          <Header />
           {children}
-        <Footer></Footer>
+          <Footer />
+        </Providers>
+
       </body>
     </html>
   );

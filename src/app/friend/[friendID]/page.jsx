@@ -1,12 +1,7 @@
+import ActionButtons from "@/components/reusable/ActionButtons";
 import FriendCard from "@/components/reusable/FriendCard";
-import { FiVideo } from "react-icons/fi";
-import { LuPhoneCall } from "react-icons/lu";
-import {
-    MdArchive,
-    MdDelete,
-    MdOutlineTextsms,
-    MdSnooze,
-} from "react-icons/md";
+
+import { MdArchive, MdDelete, MdSnooze } from "react-icons/md";
 
 const friendDetailPage = async ({ params }) => {
     const { friendID } = await params;
@@ -35,7 +30,7 @@ const friendDetailPage = async ({ params }) => {
 
                 {/* Right Side */}
 
-                <div className="space-y-6">
+                <div className="gap-6 grid">
                     {/* Right Top */}
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className="bg-white rounded-lg shadow-sm p-6 content-center text-center">
@@ -83,20 +78,7 @@ const friendDetailPage = async ({ params }) => {
                         <h2 className="text-[#244D3F] font-medium text-xl mb-4">
                             Quick Check-In
                         </h2>
-                        <div className="grid grid-cols-3 gap-4">
-                            <div className="bg-base-200 p-4 rounded-md flex flex-col justify-center items-center shadow-sm text-3xl hover:-translate-y-1 cursor-pointer">
-                                <LuPhoneCall />
-                                <p className="mt-2 text-lg">Call</p>
-                            </div>
-                            <div className="bg-base-200 p-4 rounded-md flex flex-col justify-center items-center shadow-sm text-3xl hover:-translate-y-1 cursor-pointer">
-                                <MdOutlineTextsms />
-                                <p className="mt-2 text-lg">Text</p>
-                            </div>
-                            <div className="bg-base-200 p-4 rounded-md flex flex-col justify-center items-center shadow-sm text-3xl hover:-translate-y-1 cursor-pointer">
-                                <FiVideo />
-                                <p className="mt-2 text-lg">Video</p>
-                            </div>
-                        </div>
+                        <ActionButtons friend={friend.name}/>
                     </div>
                 </div>
             </div>
