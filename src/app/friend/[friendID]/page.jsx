@@ -13,6 +13,8 @@ const friendDetailPage = async ({ params }) => {
     return (
         <div className="mx-auto w-11/12 md:w-9/12 max-w-277.5">
             <div className="grid lg:grid-cols-[1fr_2fr] gap-6">
+
+                
                 {/* Left Side */}
 
                 <div className="grid gap-2">
@@ -78,7 +80,7 @@ const friendDetailPage = async ({ params }) => {
                         <h2 className="text-[#244D3F] font-medium text-xl mb-4">
                             Quick Check-In
                         </h2>
-                        <ActionButtons friend={friend.name}/>
+                        <ActionButtons friend={friend.name} />
                     </div>
                 </div>
             </div>

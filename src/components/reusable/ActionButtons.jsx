@@ -11,7 +11,6 @@ const ActionButtons = ({ friend }) => {
     const videoToast = () => toast.success(`Video with ${friend}`);
 
     const { timeLineState, setTimeLineState } = useContext(TimeLineContext);
-    console.log(timeLineState);
 
     const formatDateTime = () => {
         const now = new Date();
