@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ # 🛠️ Keen Keeper
 
-## Getting Started
+"A responsive MERN stack web application built with React and NextJs, featuring a clean UI powered by Tailwind CSS and DaisyUI. Designed for high performance and seamless user experience."
 
-First, run the development server:
+
+ ## 🚀 Live Demo
+Check out the live project here:  
+[Keen Keeper Live Link](https://keen-keeper-one.vercel.app/)
+
+## 📖 Project Overview
+"This project is a dedicated Personal Relationship Management (PRM) tool designed to organize and manage information about friends and acquaintances. It allows users to maintain a detailed list of friends, store their contact information, and keep a chronological log of all interactions. Whether it's a phone call, a text, or a physical meeting, this application helps users track their social engagement history, ensuring they stay connected with their loved ones effectively."
+
+## ✨ Key Features
+* **Modern UI/UX:** A clean and professional design for better accessibility.
+* **Fully Responsive:** Optimized for mobile, tablet, and desktop screens.
+* **Fast Performance:** Lightweight and optimized for quick loading times.
+* **Interactive Tools:** Dynamic features implemented using modern JavaScript logic.
+* **Pixel-perfect:** implementation from Figma (no copy-paste)
+
+## 💻 Tech Stack
+This project was built using the following technologies:
+* **HTML5 & CSS3** - For structural semantic layout.
+* **Tailwind CSS** - For modern, utility-first styling.
+* **Daisy UI** - For use useble Component.
+* **JavaScript (ES6+)** - For dynamic functionality and interactivity.
+* **NextJS** - For SEO Friendly Dynamic Route Base Site.
+* **React -Toastify** (NPM Package) - For Use Beutifull Toast In Button Clicking.
+
+
+## ⚙️ Local Setup Guide
+
+Follow these steps to set up the project on your local machine:
+
+### 1. Prerequisites
+Make sure you have **Node.js** and **npm** installed on your system. You can check this by running:
+
+```bash
+node -v
+npm -v
+```
+
+### 2. Clone the Repository
+First, clone the project from GitHub to your local computer:
+
+```bash
+git clone https://github.co/mmdmukhlesurrahman1/b13-assignment-7.git
+
+```
+### 3. Navigate to the Directory
+Move into the project folder:
+
+```bash
+cd b13-assignment-7
+
+```
+### 4. Install Dependencies
+Install all the necessary packages required for the project:
+
+```bash
+npm install
+```
+
+### 5. Run the Project
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
