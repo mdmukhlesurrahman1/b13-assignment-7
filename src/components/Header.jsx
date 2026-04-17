@@ -39,7 +39,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="bg-white text-black shadow-sm mb-10 lg:mb-20">
+    <div className="bg-white text-black shadow-sm mb-10">
       <div className="navbar md:w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">

@@ -1,6 +1,7 @@
 "use client";
 
 import { TimeLineContext } from "@/context/timeline.context";
+import Link from "next/link";
 import { useContext, useMemo } from "react";
 import {
     PieChart,
@@ -32,8 +33,11 @@ const Stats = () => {
     return (
         <div className="w-full">
             {timeLineState.length === 0 ? (
-                <div className="bg-white rounded-md shadow-sm p-20 text-xl text-center">
-                    No Friendship Analytics
+                <div className="bg-white rounded-md shadow-sm p-20 text-xl text-center text-gray-400">
+                    <p>No Friendship Analytics</p>
+                    <Link href="/" className="btn bg-[#244D3F] text-white mt-5">
+                        Go back home
+                    </Link>
                 </div>
             ) : (
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">

@@ -53,7 +53,7 @@ const ActionButtons = ({ friend }) => {
             date: savedTime,
         };
 
-        setTimeLineState([...timeLineState, timelineData]);
+        setTimeLineState([timelineData, ...timeLineState]);
 
         toast.success(`Call with ${friend}`);
     };
@@ -66,7 +66,7 @@ const ActionButtons = ({ friend }) => {
             date: savedTime,
         };
 
-        setTimeLineState([...timeLineState, timelineData]);
+        setTimeLineState([timelineData, ...timeLineState]);
 
         toast.success(`Text with ${friend}`);
     };
@@ -79,7 +79,7 @@ const ActionButtons = ({ friend }) => {
             date: savedTime,
         };
 
-        setTimeLineState([...timeLineState, timelineData]);
+        setTimeLineState([timelineData, ...timeLineState]);
 
         toast.success(`Video with ${friend}`);
     };
