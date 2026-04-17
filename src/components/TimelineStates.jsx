@@ -8,7 +8,7 @@ import { TimeLineContext } from "@/context/timeline.context";
 import { useContext } from "react";
 
 const TimelineStates = () => {
-    const { timeLineState, setTimeLineState } = useContext(TimeLineContext);
+    const { timeLineState } = useContext(TimeLineContext);
     return (
         <div className="space-y-4">
             {timeLineState.map((state, ind) => (

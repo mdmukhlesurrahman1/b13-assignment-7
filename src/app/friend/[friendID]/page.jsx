@@ -1,5 +1,6 @@
 import ActionButtons from "@/components/reusable/ActionButtons";
 import FriendCard from "@/components/reusable/FriendCard";
+import { notFound } from "next/navigation";
 
 import { MdArchive, MdDelete, MdSnooze } from "react-icons/md";
 
@@ -10,11 +11,13 @@ const friendDetailPage = async ({ params }) => {
 
     const friend = friends.find((f) => f.id === parseInt(friendID));
 
+    if (!friend) {
+        notFound();
+    }
+
     return (
         <div className="mx-auto w-11/12 md:w-9/12 max-w-277.5">
             <div className="grid lg:grid-cols-[1fr_2fr] gap-6">
-
-                
                 {/* Left Side */}
 
                 <div className="grid gap-2">
